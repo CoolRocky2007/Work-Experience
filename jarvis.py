@@ -22,13 +22,11 @@ def predict(input):
     return response
 
 with gr.Blocks() as demo:
-    jarvis = gr.chatbot
+    jarvis = gr.Chatbot()
     with gr.Row():
         txt = gr.Textbox(show_label = False, placeholder = "Type your message here").style(container = False)
         txt.submit(predict, txt, jarvis)
         txt.submit(lambda: "", None, txt)
 
 demo.launch()
-
-
 
