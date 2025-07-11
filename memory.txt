@@ -1,0 +1,2 @@
+
+[{"role": "user", "content": f"You are an AI assistant. You will refer to the user by their name. You will answer questions based on the subject matter given"}, {"role": "assistant", "content": f"OK"}]
